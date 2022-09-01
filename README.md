@@ -25,3 +25,8 @@ To be able to read my nugets, add my nuget registry on github to your nuget sour
 ````
 dotnet nuget add source https://nuget.pkg.github.com/Wiesenwischer/index.json --name wiesenwischer --username Wiesenwischer --password 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 --store-password-in-clear-text
 ````
+
+Installing the templates using:
+````
+dotnet new -i WiesenwischerTemplates --nuget-source wiesenwischer
+````
