@@ -4,7 +4,7 @@
     "classifications": [
         "Elk",
         "Kibana",
-        "Logstah",
+        "Logstash",
         "Docker"
     ],
     "identity": "ElkStack.Docker.Template",
