@@ -21,10 +21,6 @@ dotnet new --install .\
         
 ## Installation
 
-To be able to read my nugets, add my nuget registry on github to your nuget sources.
-Please contact me to get a PAT to get access to the registry.
-
-
 Installing the templates using:
 ````
 dotnet new -i WiesenwischerTemplates
