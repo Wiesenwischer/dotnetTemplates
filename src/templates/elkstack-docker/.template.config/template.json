@@ -1,6 +1,6 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "MAD",
+    "author": "Zorica Dudarin, Marcus Dammann, Stefan Vogelsang",
     "classifications": [
         "Elk",
         "Kibana",
@@ -18,7 +18,7 @@
         "indexname": {
             "type": "parameter",
             "datatype": "string",
-            "isRequired": true, 
+            "isRequired": true,
             "replaces": "indexname"
         }
     }
