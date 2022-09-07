@@ -2,18 +2,13 @@ version: '3.4'
 
 services:
  
-    healthmonitor:
-        ports:
-           - "5100:80"
-        restart: always
-        build:
-          context: .
-          dockerfile: Dockerfile
-        logging:
-          driver: "json-file"
-          options:
-            max-size: "${LOG_MAX_SIZE:-5m}"
-            max-file: "${LOG_MAX_FILE:-3}"
-        environment:
-          - ASPNETCORE_ENVIRONMENT=Development
-          - ASPNETCORE_URLS=http://0.0.0.0:80
+  itops.healthmonitor:
+    image: ${DOCKER_REGISTRY-}itopshealthmonitor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5100:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
